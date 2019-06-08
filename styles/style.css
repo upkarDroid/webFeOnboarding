@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: palevioletred;
+ color:white
+
+}
+
+.animate-me{
+  background-color: rebeccapurple;
+  height:30px;
+  /* width:100px; */
+  width: auto;
+  margin:40px;
+  cursor: pointer;
+}
+
+.animate-me:hover{
+  animation: widthAnim 2s 0s infinite linear;
+}
+@keyframes widthAnim{
+  0%{
+    transform:none
+  }
+  25%{
+    transform: scaleX(0.75);
+    background-color: royalblue;
+    
+  }
+  50%{
+    transform: scaleX(0.50);
+    background-color: red;
+  }
+
+  75%{
+    transform: scaleX(0.75);
+    background-color: royalblue;
+  }
+
+  100%{
+    transform: scaleX(1);
+    background-color: rebeccapurple;
+
+  }
+}
